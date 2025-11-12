@@ -25,7 +25,7 @@ jobs:
 
     - name: Build app
       run: |
-        pyinstaller --onefile --windowed main.py
+        pyinstaller --onefile --windowed --ico=ico64.ico test4.py
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4
